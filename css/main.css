@@ -1,0 +1,111 @@
+/* Сброс отступов и границ для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Задание 100% высоты и ширины для html и body */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+  scroll-padding-top: 15%;
+}
+
+/* Стили для body */
+body {
+    display: flex; /* Устанавливает флекс-контейнер */
+    flex-direction: column; /* Выстраивает элементы в колонку */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    width: 100%; /* Устанавливает ширину 100% */
+    background: #f0f0f0; /* Цвет фона */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+/* Стили для контейнера */
+#container {
+    display: flex; /* Устанавливает флекс-контейнер */
+    height: 100%; /* Высота 100% */
+    width: 100%; /* Ширина 100% */
+    margin-top: 5%; /* Отступ сверху */
+}
+
+/* Стили для шапки (header) */
+#header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Градиентный фон */
+    color: white; /* Цвет текста */
+    height: 10%; /* Высота 10% */
+    width: 100%; /* Ширина 100% */
+    display: flex; /* Устанавливает флекс-контейнер */
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    align-items: center; /* Центрирует содержимое по вертикали */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Привязка к верхней части экрана */
+    left: 0; /* Привязка к левой части экрана */
+    z-index: 1000; /* Уровень слоя */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Стили для списка в шапке */
+#header ul {
+    display: flex; /* Устанавливает флекс-контейнер */
+    list-style-type: none; /* Убирает маркеры списка */
+    padding: 0; /* Сброс отступов */
+    margin: 0; /* Сброс полей */
+    gap: 20px; /* Промежутки между элементами списка */
+}
+
+#header ul a {
+    color: white; /* Белый цвет текста */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+/* Стили для основного содержимого (main) */
+#main {
+    background: white; /* Цвет фона */
+    height: 100%; /* Высота 100% */
+    width: 100%; /* Ширина 80% */
+    display: flex; /* Устанавливает флекс-контейнер */
+    flex-direction: column; /* Выстраивает элементы в колонку */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    overflow-y: auto; /* Добавляет вертикальную прокрутку при необходимости */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 8px; /* Скругленные углы */
+}
+
+.main_text {
+    text-align: center; /* Центрирует текст */
+    margin-bottom: 20px; /* Нижний отступ */
+}
+
+.main_img {
+    max-width: 100%; /* Максимальная ширина */
+    max-height: 400px; /* Максимальная высота */
+    width: auto; /* Автоматическая ширина */
+    height: auto; /* Автоматическая высота */
+    margin-bottom: 20px; /* Нижний отступ */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Стили для подвала (footer) */
+#footer {
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); /* Градиентный фон */
+    color: white; /* Цвет текста */
+    height: 10%; /* Высота 10% */
+    width: 100%; /* Ширина 80% */
+    display: flex; /* Устанавливает флекс-контейнер */
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    align-items: center; /* Центрирует содержимое по вертикали */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    border-top-left-radius: 8px; /* Скругленные углы сверху слева */
+    border-top-right-radius: 8px; /* Скругленные углы сверху справа */
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 0; /* Привязка к нижней части экрана */
+    left: 0; /* Привязка к левой части экрана */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a id="header_logo" href="secret.html"><img src="img/header.jpg" height="40px"></a></li>
+            <li><a class="header_text" href="main.html">Главная</a></li>
+            <li><a class="header_text" href="biography.html">Биография</a></li>
+            <li><a class="header_text" href="photo.html">Фото</a></li>
+            <li><a class="header_text" href="feedback_form.html">Оставить отзыв</a></li>
+            <li><a class="header_text" href="view.php">Читать отзывы</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <div id="main">
+            <h2>Оставить отзыв</h2>
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="phone">Телефон:</label><br>
+                <input type="text" id="phone" name="phone" required><br>
+                <label for="feedback">Отзыв:</label><br>
+                <textarea id="feedback" name="feedback" required></textarea><br>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="tel:+79991112233">Номер телефона: +79991112233</a>
+    </div>
+</body>
+</html>

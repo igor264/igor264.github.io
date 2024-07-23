@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Igor Shaev</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <base href="./">
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a id="header_logo" href="secret.html"><img src="img/header.jpg" height="40px"></a></li>
+            <li><a class="header_text" href="main.html">Главная</a></li>
+            <li><a class="header_text" href="biography.html">Биография</a></li>
+            <li><a class="header_text" href="photo.php">Фото</a></li>
+            <li><a class="header_text" href="feedback_form.html">Оставить отзыв</a></li>
+            <li><a class="header_text" href="view.php">Читать отзывы</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <div id="main">
+            <div class="main_text">
+                <h1>Игорь Алексеевич Шаев</h1>
+                <h2><br>— Гений, миллиардер, плэйбой, филантроп.</h2>
+            </div>
+            <img class="main_img" src="img/first_img.jpg">
+
+        </div>
+    </div>
+    <div id="footer">
+        <a href="tel:+79991112233">Номер телефона: +79991112233</a>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js', { scope: '/' });
+        }
+    </script>
+</body>
+</html>
